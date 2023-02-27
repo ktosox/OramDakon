@@ -1,11 +1,33 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://new folder/Control.gd" type="Script" id=1]
+[ext_resource path="res://botBitmask.png" type="Texture" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = 10.0
 margin_top = 8.0
 margin_right = 260.0
 margin_bottom = 357.0
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_left = 552.0
+margin_top = 718.0
+margin_right = 694.0
+margin_bottom = 1155.0
+
+[node name="MenuButton" type="MenuButton" parent="."]
+margin_left = 5.0
+margin_top = 1166.0
+margin_right = 710.0
+margin_bottom = 1270.0
+text = "nfhgfhgfhgfhgf"
+icon = ExtResource( 2 )
+items = [ "Item 0", null, 0, false, false, 0, 0, null, "", false, "Item 1", null, 0, false, false, 1, 0, null, "", false, "Item 2", null, 0, false, false, 2, 0, null, "", false, "Item 3", null, 0, false, false, 3, 0, null, "", false, "Item 4", null, 0, false, false, 4, 0, null, "", false, "Item 5", null, 0, false, false, 5, 0, null, "", false, "Item 6", null, 0, false, false, 6, 0, null, "", false, "Item 7", null, 0, false, false, 7, 0, null, "", false, "Item 8", null, 0, false, false, 8, 0, null, "", false, "Item 9", null, 0, false, false, 9, 0, null, "", false ]
